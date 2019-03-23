@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">
+                    Survey Questions
+                </h1>
+
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h1 class="subtitle is-2">About You</h1>
+            <div class="field">
+                <label class="label">Name (required)</label>
+                <div class="control">
+                    <input class="input is-success validate" type="text" id="name" required>
+                </div>
+                <label style="margin-top: 10px" class="label">Your picture (required)</label>
+                <div class="file has-name is-left">
+                    <label class="file-label">
+                        <input class="file-input validate" type="file" name="photo" id="photo">
+                        <span class="file-cta">
+                            <span class="file-icon">
+                                <i class="fas fa-upload"></i>
+                            </span>
+                            <span class="file-label">
+                                Choose a file…
+                            </span>
+                        </span>
+                        <span class="file-name">
+                            Select a beautiful picture of yourself
+                        </span>
+                    </label>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <h1 class="title is-4">Question 1</h1>
+            <h1 class="subtitle is-5">Your mind is always buzzing with unexplored ideas and plans.</h1>
+            <div class="control">
+                <div class="select is-primary">
+                    <select id="q1" class="browser-default">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly agree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly disagree)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h1 class="title is-4">Question 2</h1>
+            <h1 class="subtitle is-5">Generally speaking, you rely more on your experience than your imagination.</h1>
+            <div class="control">
+                <div class="select is-primary">
+                    <select id="q2" class="browser-default">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly agree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly disagree)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h1 class="title is-4">Question 3</h1>
+            <h1 class="subtitle is-5">You find it easy to stay relaxed and focused even when there is some pressure.
+            </h1>
+            <div class="control">
+                <div class="select is-primary">
+                    <select id="q3" class="browser-default">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly agree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly disagree)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h1 class="title is-4">Question 4</h1>
+            <h1 class="subtitle is-5">You rarely do something just out of sheer curiosity.</h1>
+            <div class="control">
+                <div class="select is-primary">
+                    <select id="q4" class="browser-default">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly agree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly disagree)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h1 class="title is-4">Question 5</h1>
+            <h1 class="subtitle is-5">People can rarely upset you.</h1>
+            <div class="control">
+                <div class="select is-primary">
+                    <select id="q5" class="browser-default">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly agree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly disagree)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h1 class="title is-4">Question 6</h1>
+            <h1 class="subtitle is-5">It is often difficult for you to relate to other people’s feelings.</h1>
+            <div class="control">
+                <div class="select is-primary">
+                    <select id="q6" class="browser-default">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly agree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly disagree)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h1 class="title is-4">Question 7</h1>
+            <h1 class="subtitle is-5">In a discussion, truth should be more important than people’s sensitivities.</h1>
+            <div class="control">
+                <div class="select is-primary">
+                    <select id="q7" class="browser-default">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly agree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly disagree)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h1 class="title is-4">Question 8</h1>
+            <h1 class="subtitle is-5">You rarely get carried away by fantasies and ideas.</h1>
+            <div class="control">
+                <div class="select is-primary">
+                    <select id="q8" class="browser-default">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly agree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly disagree)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h1 class="title is-4">Question 9</h1>
+            <h1 class="subtitle is-5">You think that everyone’s views should be respected regardless of whether they are
+                supported by facts or not.</h1>
+            <div class="control">
+                <div class="select is-primary">
+                    <select id="q9" class="browser-default">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly agree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly disagree)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <h1 class="title is-4">Question 10</h1>
+            <h1 class="subtitle is-5">You feel more energetic after spending time with a group of people.</h1>
+            <div class="control">
+                <div class="select is-primary">
+                    <select id="q10" class="browser-default">
+                        <option value="">Select an option</option>
+                        <option value="1">1 (strongly agree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (strongly disagree)</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="control">
+                <input class="button is-primary" type="submit" value="Submit" id="submit" style="width: 100%">
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- Modal Section -->
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Best Match</p>
+                <button class="delete" class = "modal-close" aria-label="close"></button>
+            </header>
+            <section class="modal-card-body">
+                <!-- Content ... -->
+                <div class="box">
+                    <article class="media">
+                        <div class="media-left">
+                            <figure class="image is-64x64">
+                                <img id="bestMatchPic" src="" alt="Image">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <div class="content">
+                                <p>
+                                    <strong id="bestMatchName"></strong></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <button class="button" id = "modal-close">Close</button>
+            </footer>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            function validateForm() {
+                var isValid = true;
+                $(".validate").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                $(".browser-default").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            };
+
+            if (validateForm() == true) {
+                var newFriend = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+                $.post("/api/friends", newFriend).then(function (data) {
+                    console.log(data);
+                    // alert("Friend added");
+                    $("#bestMatchName").text(data.name);
+                    $("#bestMatchPic").attr("src", data.photo);
+                });
+                // Executing modal
+                var modal = document.querySelector('.modal');  // assuming you have only 1
+                var html = document.querySelector('html');
+                modal.classList.add('is-active');
+                html.classList.add('is-clipped');
+
+                modal.querySelector('.modal-background').addEventListener('click', function (e) {
+                    e.preventDefault();
+                    modal.classList.remove('is-active');
+                    html.classList.remove('is-clipped');
+                });
+                $('#name').val("");
+                $('#photo').val("");
+                $('#q1').val("");
+                $('#q2').val("");
+                $('#q3').val("");
+                $('#q4').val("");
+                $('#q5').val("");
+                $('#q6').val("");
+                $('#q7').val("");
+                $('#q8').val("");
+                $('#q9').val("");
+                $('#q10').val("");
+
+
+            } else {
+                alert("Please fill out ALL fields before submitting survey!");
+            }
+
+
+
+
+
+        });
+
+        $("#modal-close").click(function () {
+            $(".modal").removeClass("is-active");
+        });
+        $(".modal-close").click(function () {
+            $(".modal").removeClass("is-active");
+        });
+
+        //logic for matches
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
